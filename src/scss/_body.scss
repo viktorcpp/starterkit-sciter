@@ -1,0 +1,54 @@
+
+html, body
+{
+    display:    block;
+    min-height: 100%;
+    margin:     0;
+    padding:    0;
+}
+
+html
+{
+    //
+
+} // html
+
+body
+{
+    //margin-left: calc(100vw - 100%);
+    min-height:  100vh;
+    max-width:   100%;
+    overflow-x:  hidden;
+    overflow-y:  auto;
+}
+
+.page
+{
+    width:            200vw;
+    display:          flex;
+    flex-flow:        row;
+    align-items:      stretch;
+    align-content:    stretch;
+    min-height:       100vh;
+    transform-origin: 0 0;
+    transition:       0.5s transform-origin ease-in-out;
+
+} // .page
+
+.page__main
+{
+    width: 100vw;
+
+} // .page__main
+
+.page__menu-mobile
+{
+    width: 100vw;
+
+} // .page__menu-mobile
+
+.page--menu-mobile-opened
+{
+    transform: translate3d(-100vw, 0, 0);
+
+} // .page--menu-mobile-opened
